@@ -1,0 +1,84 @@
+/* Movies Page Specific Styles */
+.page-header {
+    background: linear-gradient(135deg, var(--accent), var(--highlight));
+    padding: 60px 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.filters {
+    background-color: var(--secondary);
+    padding: 20px 0;
+    border-bottom: 1px solid var(--accent);
+}
+
+.filter-options {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.filter-select {
+    background-color: var(--primary);
+    color: var(--text);
+    border: 1px solid var(--accent);
+    padding: 10px 15px;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+.filter-select option {
+    background-color: var(--primary);
+    color: var(--text);
+}
+
+.movies-grid.expanded {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px 0;
+}
+
+.page-btn {
+    padding: 10px 15px;
+    background-color: var(--secondary);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.page-btn:hover,
+.page-btn.active {
+    background-color: var(--highlight);
+}
+
+@media (max-width: 768px) {
+    .movies-grid.expanded {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+    
+    .filter-options {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-select {
+        width: 200px;
+    }
+}

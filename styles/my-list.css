@@ -1,0 +1,84 @@
+
+.list-header {
+    background: linear-gradient(135deg, var(--accent), #00b4db);
+}
+
+.list-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+    background-color: var(--secondary);
+    padding: 20px 30px;
+    border-radius: 8px;
+    min-width: 120px;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--highlight);
+}
+
+.stat-label {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.saved-item {
+    position: relative;
+}
+
+.remove-btn {
+    background-color: rgba(233, 69, 96, 0.2);
+    color: var(--highlight);
+    border: 1px solid var(--highlight);
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-top: 8px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.remove-btn:hover {
+    background-color: var(--highlight);
+    color: white;
+}
+
+.list-content {
+    margin-bottom: 40px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-secondary);
+}
+
+.empty-state h3 {
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+@media (max-width: 768px) {
+    .list-stats {
+        gap: 20px;
+    }
+    
+    .stat-item {
+        padding: 15px 20px;
+        min-width: 100px;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
+    }
+}

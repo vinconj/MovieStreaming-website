@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My List - MovieSite</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/my-list.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">Movie<span>Box</span></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="tv-shows.html">TV Shows</a></li>
+                    <li><a href="my-list.html" class="active">My List</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header list-header">
+        <div class="container">
+            <h1>My Watchlist</h1>
+            <p>Your personalized collection of movies and TV shows</p>
+        </div>
+    </section>
+
+    <!-- My List Content -->
+    <main class="container">
+        <div class="list-stats">
+            <div class="stat-item">
+                <span class="stat-number">12</span>
+                <span class="stat-label">Movies</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">8</span>
+                <span class="stat-label">TV Shows</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">20</span>
+                <span class="stat-label">Total Items</span>
+            </div>
+        </div>
+
+        <div class="list-content">
+            <h2 class="section-title">Your Watchlist</h2>
+            <div class="movies-grid">
+                <!-- Saved movie/TV show cards would go here -->
+                <div class="movie-card saved-item">
+                    <img src="images/tempest.jpg" alt="Saved Item" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Saved Movie Title</h3>
+                        <div class="movie-meta">
+                            <span>Movie</span>
+                            <span class="rating">★ 8.2</span>
+                        </div>
+                        <button class="remove-btn">Remove</button>
+                    </div>
+                </div>
+                <!-- Add more saved items -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- Same footer as index.html -->
+            </div>
+            <div class="copyright">
+                &copy; 2025 MovieSite. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

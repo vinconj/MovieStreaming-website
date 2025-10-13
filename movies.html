@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies - MovieSite</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/movies.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">Movie<span>Site</span></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="movies.html" class="active">Movies</a></li>
+                    <li><a href="tv-shows.html">TV Shows</a></li>
+                    <li><a href="my-list.html">My List</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search movies...">
+                <button>🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>All Movies</h1>
+            <p>Browse our complete collection of movies</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter-options">
+                <select class="filter-select">
+                    <option>All Genres</option>
+                    <option>Action</option>
+                    <option>Comedy</option>
+                    <option>Drama</option>
+                    <option>Horror</option>
+                    <option>Sci-Fi</option>
+                </select>
+                <select class="filter-select">
+                    <option>All Years</option>
+                    <option>2023</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                </select>
+                <select class="filter-select">
+                    <option>Sort by Popularity</option>
+                    <option>Sort by Rating</option>
+                    <option>Sort by Newest</option>
+                    <option>Sort by Oldest</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Movies Grid -->
+    <main class="container">
+        <div class="movies-grid expanded">
+            <!-- Movie cards would be repeated here -->
+            <!-- Example of 12 movie cards -->
+            <div class="movie-card">
+                <img src="images/fountain of youth.jpg" alt="Movie Poster" class="movie-poster">
+                <div class="movie-info">
+                    <h3 class="movie-title">Action Adventure</h3>
+                    <div class="movie-meta">
+                        <span>2023</span>
+                        <span class="rating">★ 8.1</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Add 11 more movie cards similarly -->
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <a href="#" class="page-btn">Previous</a>
+            <a href="#" class="page-btn active">1</a>
+            <a href="#" class="page-btn">2</a>
+            <a href="#" class="page-btn">3</a>
+            <a href="#" class="page-btn">Next</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- Same footer as index.html -->
+            </div>
+            <div class="copyright">
+                &copy; 2025 MovieSite. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
